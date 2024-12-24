@@ -66,27 +66,26 @@ main {
 
 /* About Section */
 .about {
-  margin: 50px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 900px;
+  margin: 50px 50px;
+  padding: 20px 20px;
+  width: 900px;
   color: white;
   background: linear-gradient(135deg, rgb(37, 37, 37), rgb(27, 27, 27));
   border: 1px solid rgb(47, 47, 47);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .about h3 {
-  font-size: 30px;
+  font-size: 50px;
   color: wheat;
 }
 .Experienced {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
+  align-items: center;
 }
 .exp {
   width: 150px;
@@ -142,20 +141,18 @@ main {
 
 /* Services Section */
 .services {
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 900px;
+  margin: 5px 50px;
+  padding: 20px 50px;
+  width: fit-content;
   background-color: rgb(39, 39, 39);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .services-you-get {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 .service-card {
   width: 300px;
@@ -173,31 +170,90 @@ main {
 
 /* Employees Section */
 .employes {
-  padding: 20px;
-  margin: 40px auto;
-  width: 90%;
   background-color: rgb(39, 39, 39);
+  padding: 10px 30px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .employee {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 .employee-card {
   background-color: rgb(47, 47, 47);
-  padding: 20px;
-  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 20px;
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .employee-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+.containner_employee {
+  position: relative;
+  width: fit-content;
+}
 .containner_employee img {
-  max-width: 100%;
+  opacity: 1;
+  display: block;
   height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.containner_employee:hover .containner_employee img {
+  opacity: 0.3;
+}
+.containner_employee:hover .middle {
+  opacity: 1;
+}
+.github_link button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 15px 40px;
   border-radius: 10px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  gap: 20px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.bottom button {
+  padding: 20px 20px;
+  background-color: rgb(57, 57, 57);
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: box-shadow 0.2s;
+}
+.bottom button:hover {
+  box-shadow: 10px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
