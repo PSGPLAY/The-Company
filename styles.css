@@ -217,13 +217,14 @@ main {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.containner_employee:hover .containner_employee img {
+
+.employee-card:hover .containner_employee img{
   opacity: 0.3;
 }
-.containner_employee:hover .middle {
+.employee-card:hover .middle {
   opacity: 1;
 }
-.github_link button {
+.middle button {
   background-color: black;
   color: white;
   font-size: 15px;
