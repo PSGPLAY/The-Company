@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100vw;
+  background-color: rgb(27, 27, 27);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+.right-side-main {
+  padding: 50px 50px;
+}
+.right-side-main img {
+  width: 500px;
+}
+.left-side-main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 60px;
+  width: 600px;
+}
+.left-side-main h1 {
+  font-size: 70px;
+}
+.left-side-main p {
+  font-size: 20px;
+}
+.about {
+  margin: 20px 50px;
+  padding: 20px 50px;
+  width: 900px;
+  color: white;
+  background: linear-gradient(135deg, rgb(37, 37, 37), rgb(27, 27, 27));
+  border: 1px solid rgb(47, 47, 47);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about h3 {
+  font-size: 50px;
+  color: wheat;
+}
+.Experienced {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.exp {
+  width: 150px;
+  height: 150px;
+  border: none;
+  background-color: rgb(78, 76, 76);
+  box-shadow: 0 4px 10px rgba(48, 48, 48, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  transition: box-shadow 0.2s;
+}
+.exp:hover {
+  box-shadow: 5px 10px 10px rgba(92, 136, 208, 0.2);
+  cursor: pointer;
+}
