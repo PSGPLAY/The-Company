@@ -6,6 +6,36 @@
   color: white;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+.go-to-top{
+  animation-name: appear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    display: none;
+    position: fixed;
+  }
+  3%{
+    opacity: 0;
+    display: none;
+  }
+  3.5%{
+    opacity: 1;
+    display: block;
+  }
+
+  100%{
+    opacity: 1;
+    display: block;
+    position: fixed;
+  }
+}
+
 body {
   width: 99dvw;
   background-color: rgb(27, 27, 27);
